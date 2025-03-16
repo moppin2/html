@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 테스트 페이지</title>	
+	<link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--공통 CSS-->
+    <style>
+        /* 구매 버튼 */
+        .buy-button {
+            padding: 10px;
+            font-size: 16px;
+            background: #4ca6c9;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buy-button:hover {
+            background: #a0e2fc;
+        }
+    </style>
+    
+
+	<div class="product-detail-container">
+    <style>        
+    .product-detail-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        font-family: 'NanumSquareNeo', sans-serif;
+    }            
+    .product-detail-container > div {
+        margin-bottom: 60px;
+    }
+    
+    .product-detail-container p,
+    .product-detail-container h2 {
+        margin: 10px 0;
+    }
+    
+    .product-title {
+        text-align: left;
+        font-size: 35px;
+        color: #555;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    </style>
+	
+		<h2 class="product-title">캄마인드 롤업 스노클</h2>
+		<div class="product-detail basic">
+			<div class="product-image">
+				<img src="https://calmmind.co.kr/web/upload/NNEditor/20230605/SNR.png" alt="제품 이미지">
+			</div>
+			<div class="product-info">	
+				<h2>돌돌 말아서 편안하게 보관하는 스노클</h2>	
+				<p>길어서 보관하기 불편하셨나요? 돌돌 말아서 간편하게 들고 다녀보세요!</p>
+			</div>
+		</div>	
+        <style>
+        .product-detail.basic {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            /*padding: 10px;
+            border: 1px solid #ddd;*/
+            background: #fff;
+            border-radius: 10px;
+        }
+        .product-image {
+            flex: 2;
+            text-align: center;
+        }
+        
+        .product-info {
+            padding: 10px;
+            flex: 1;/*
+            display: flex;
+            flex-direction: column;
+            justify-content: center;*/        
+        }
+        .product-image img {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 5px;
+        }
+        
+        .product-info h2 {
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+        
+        .product-info p {
+            font-size: 14px;
+            color: #555;
+            word-break: keep-all; /* 음절(글자)를 기준으로 줄바꿈 */
+            line-height: 1.5;
+        }
+        </style>
+
+        <div class="tmp">
+            <h2>돌돌 말아서 편하게 보관하는 스노클</h2>
+            <img src="https://calmmind.co.kr/web/upload/NNEditor/20230605/SNR.png" alt="제품 이미지">            
+            <p>길어서 보관하기 불편하셨나요? 돌돌 말아서 간편하게 들고 다녀보세요!</p>
+        </div>
+        <style>
+            .tmp{
+                background-color: #ddd;
+                border-radius: 10px;
+                color: white;
+                word-break: keep-all;
+                line-height: 1.5;
+                min-width: 300px;
+            }
+            .tmp img{
+                width: 100%;
+            }
+            .tmp h2{
+                padding: 10px;
+                margin: 0;
+                padding-bottom: 0;
+            }
+            .tmp p{
+                padding: 10px;
+                margin: 0;
+                padding-top: 0;
+            }
+        </style>
+
+
+
+	
+		<h2 class="product-title">타이틀을 입력하세요.</h2>
+        <div class="product-scroll-container">
+            <button class="scroll-button prev-button">&#60;</button> <!-- 이전 버튼 -->
+            <div class="product-scroll">
+                <div class="product-card">
+                    <img src="https://4ddig.tenorshare.com/images/photo-issues/how-to-increase-resolution-of-image-in-photoshop-1.webp?w=620&h=413" alt="제품 이미지">
+                    <h2>제품명 1</h2>
+                    <p>첫 번째 제품 설명</p>
+                    <button class="buy-button">구매하기</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://4ddig.tenorshare.com/images/photo-issues/how-to-increase-resolution-of-image-in-photoshop-1.webp?w=620&h=413" alt="제품 이미지">
+                    <h2>제품명 2</h2>
+                    <p>두 번째 제품 설명</p>
+                    <button class="buy-button">구매하기</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://4ddig.tenorshare.com/images/photo-issues/how-to-increase-resolution-of-image-in-photoshop-1.webp?w=620&h=413" alt="제품 이미지">
+                    <h2>제품명 3</h2>
+                    <p>세 번째 제품 설명</p>
+                    <button class="buy-button">구매하기</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://4ddig.tenorshare.com/images/photo-issues/how-to-increase-resolution-of-image-in-photoshop-1.webp?w=620&h=413" alt="제품 이미지">
+                    <h2>제품명 4</h2>
+                    <p>네네 번째 제품 설명</p>
+                    <button class="buy-button">구매하기</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://4ddig.tenorshare.com/images/photo-issues/how-to-increase-resolution-of-image-in-photoshop-1.webp?w=620&h=413" alt="제품 이미지">
+                    <h2>제품명 5</h2>
+                    <p>다섯섯 번째 제품 설명</p>
+                    <button class="buy-button">구매하기</button>
+                </div>
+            </div>
+            <button class="scroll-button next-button">&#62;</button> <!-- 다음 버튼 -->
+        </div>
+        <style>
+            
+        </style>
+
+
+
+
+	
+	
+		<h2 class="product-title">타이틀을 입력하세요.</h2>
+		<div class="product-grid">
+			<div class="product-image">
+				<img src="https://4ddig.tenorshare.com/images/photo-issues/how-to-increase-resolution-of-image-in-photoshop-1.webp?w=620&h=413" alt="제품 이미지">
+			</div>
+			<div class="product-info">
+	
+				<h2>제품명</h2>
+	
+				<p>그리드 기반의 정돈된 상세페이지입니다.</p>
+				<button class="buy-button">구매하기</button>
+			</div>
+		</div>
+        <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1000px;
+            padding: 10px;
+            border-radius: 10px;
+            background: #f9f9f9;
+            /*background: linear-gradient(90deg, #ff7e5f, #feb47b);*/
+        }
+            
+        </style>
+
+
+
+
+
+		<h2 class="product-title">제품 이미지</h2>		
+		<div class="full-image-scroll-container">
+			<button class="scroll-button full-prev-button">&#60;</button>
+			<div class="full-image-scroll">
+				<div class="full-image-card">
+					<img src="https://calmmind.co.kr/web/upload/NNEditor/20230605/SNR.png" alt="이미지 3">
+				</div>
+				<div class="full-image-card">
+					<img src="https://calmmind.co.kr/web/upload/NNEditor/20230605/SNRWE_roll.png" alt="이미지 1">
+				</div>
+				<div class="full-image-card">
+					<img src="https://calmmind.co.kr/web/upload/NNEditor/20230605/SNRBK_roll.png" alt="이미지 2">
+				</div>
+			</div>
+			<button class="scroll-button full-next-button">&#62;</button>
+		</div>
+	</div>	
+	<style>
+    </style>
+    <style>
+    
+    
+    
+    
+    
+    
+    
+    
+    /* 스크롤 가능한 카드형 컨테이너 */
+    .product-scroll-container {
+        position: relative;
+        max-width: 1000px;
+        overflow: hidden;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    /* 가로 스크롤되는 카드 리스트 */
+    .product-scroll {
+        display: flex;
+        padding: 0 0 10px;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .product-scroll::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
+    }
+    
+    /* 개별 카드 스타일 */
+    .product-card {
+        flex: 0 0 auto;
+        overflow: hidden;
+        width: 250px;
+        height: 290px;
+        text-align: center;
+        padding: 10px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product-card img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .product-card h2 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    
+    .product-card p {
+        font-size: 14px;
+        color: #666;
+    }
+    
+    /* 이전/다음 버튼 */
+    .scroll-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 18px;
+        z-index: 10;
+    }
+    
+    .scroll-button:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .prev-button,
+    .full-prev-button {
+        left: 10px;
+    }
+    
+    .next-button,
+    .full-next-button {
+        right: 10px;
+    }
+    
+    /* 풀 이미지 스크롤 컨테이너 */
+    .full-image-scroll-container {
+        position: relative;
+        max-width: 1000px;
+        overflow: hidden;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    .full-image-scroll {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .full-image-scroll::-webkit-scrollbar {
+        display: none; /* Chrome, Safari */
+    }
+    
+    .full-image-card {
+        flex: 0 0 auto;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    
+    .full-image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* 반응형 스타일 */
+    @media (max-width: 768px) {
+        .product-detail.basic {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .product-grid {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+    
+        .product-title {
+            text-align: center;
+        }
+    
+        .scroll-button {
+            display: none; /* 모바일에서는 버튼 숨김 */
+        }
+    
+        .product-scroll {
+            overflow-x: scroll;
+        }
+    }
+    
+	
+	</style>
+
+	<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollContainer = document.querySelector(".product-scroll");
+            const prevButton = document.querySelector(".prev-button");
+            const nextButton = document.querySelector(".next-button");
+            const scrollAmount = 265; // 한 번에 이동할 거리 (카드 크기 + 간격)
+
+            prevButton.addEventListener("click", function () {
+                scrollContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+            });
+
+            nextButton.addEventListener("click", function () {
+                scrollContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
+            });
+        });
+
+		document.addEventListener("DOMContentLoaded", function () {
+			const scrollContainer = document.querySelector(".full-image-scroll");
+			const prevButton = document.querySelector(".full-prev-button");
+			const nextButton = document.querySelector(".full-next-button");
+			const scrollAmount = 310; // 한 번에 이동할 거리 (카드 크기 + 간격)
+
+			prevButton.addEventListener("click", function () {
+				scrollContainer.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+			});
+
+			nextButton.addEventListener("click", function () {
+				scrollContainer.scrollBy({ left: scrollAmount, behavior: "smooth" });
+			});
+		});
+    </script>
+	
+	
+</body>
+</html>
