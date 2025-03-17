@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin: 0;}
+        .container{
+            width: 300px; 
+            height: 400px;
+            margin: 0 auto;
+            background-color: aqua; 
+            display: flex;
+            overflow-x: auto;
+            overflow-y: auto;
+        }
+        .item{
+            background-color: yellowgreen;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">aa</div>
+        <div class="item">bb</div>
+        <div class="item">cc</div>
+        <div class="item">dd</div>
+    </div>
+</body>
+</html>
