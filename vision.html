@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1200px;
+            height: 400px;
+            background-color: gray;
+            overflow: hidden;
+        }
+        .vision-image{
+            width: 1200px;
+            margin: -150px 0 0 0;
+        }
+
+        @media (max-width: 768px){
+            .content{
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img class="vision-image" src="https://calmmind.co.kr/_wg/import/sub/img/vision.jpg" alt="">
+    </div>
+    
+</body>
+</html>
