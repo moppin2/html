@@ -21,12 +21,26 @@
         }
         .vision-image{
             width: 1200px;
-            margin: -150px 0 0 0;
+            margin: -130px
+        }
+        .text{
+            position: absolute;
+            color: white;
+            padding: 20px;
+            font-size: 50px;
         }
 
-        @media (max-width: 768px){
+        @media (max-width: 480px){
             .content{
-                width: 100px;
+                height: 500px;
+                width: 100%;
+            }
+            .vision-image{
+                height: 500px;
+                margin: 0 0 0 280px;
+            }
+            .text{                
+                font-size: 30px;
             }
         }
     </style>
@@ -34,6 +48,7 @@
 <body>
     <div class="content">
         <img class="vision-image" src="https://calmmind.co.kr/_wg/import/sub/img/vision.jpg" alt="">
+        <h2 class="text">One tiny step forward, like breathing.</h2>
     </div>
     
 </body>
