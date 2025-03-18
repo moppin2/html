@@ -4,52 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+</head>
+<body>
+    <div class="vision-wrap">
+        <img class="vision-image" src="https://calmmind.co.kr/_wg/import/sub/img/vision.jpg?d=15" alt="">
+        <h2 class="vision-text">One tiny step forward, like breathing.</h2>
+    </div>
     <style>
-        *{
-            margin: 0;
-        }
-        .content{
+        .vision-wrap{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin: 0 auto;
-            width: 100%;
-            max-width: 1200px;
-            height: 400px;
-            background-color: gray;
+            min-width: calc(100% + 20px); /* 현재 부모 크기보다 20px 증가 (좌우 10px씩) */
+            margin-left: -10px;
+            margin-right: -10px;
+            max-width: 1260px;
             overflow: hidden;
         }
         .vision-image{
-            width: 1200px;
-            margin: -130px
+            width: 1260px;
         }
-        .text{
+        .vision-text{
             position: absolute;
             color: white;
+            margin: 0;
             padding: 20px;
             font-size: 50px;
         }
 
-        @media (max-width: 480px){
-            .content{
+        @media (max-width: 768px){
+            .vision-wrap{
                 height: 500px;
                 width: 100%;
             }
             .vision-image{
-                height: 500px;
-                margin: 0 0 0 280px;
+                min-width: 1500px;
+                height: auto;
+                margin: 0 0 0 70px;
             }
-            .text{                
+            .vision-text{                
                 font-size: 30px;
             }
         }
     </style>
-</head>
-<body>
-    <div class="content">
-        <img class="vision-image" src="https://calmmind.co.kr/_wg/import/sub/img/vision.jpg" alt="">
-        <h2 class="text">One tiny step forward, like breathing.</h2>
-    </div>
     
 </body>
 </html>
