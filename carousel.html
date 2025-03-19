@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>무한 캐러셀</title>
+    <title>부드러운 무한 캐러셀</title>
     <style>
         * {
             margin: 0;
@@ -94,10 +94,12 @@
 
     <div class="carousel-container">
         <div class="carousel">
+            <div class="carousel-item slide4">Slide 4</div> <!-- 마지막 슬라이드 복제 -->
             <div class="carousel-item slide1">Slide 1</div>
             <div class="carousel-item slide2">Slide 2</div>
             <div class="carousel-item slide3">Slide 3</div>
             <div class="carousel-item slide4">Slide 4</div>
+            <div class="carousel-item slide1">Slide 1</div> <!-- 첫 번째 슬라이드 복제 -->
         </div>
         
         <div class="controls">
@@ -114,23 +116,45 @@
         const nextBtn = document.getElementById("next");
         const playPauseBtn = document.getElementById("playPause");
 
-        let index = 0;
+        let index = 1; // 실제 첫 번째 슬라이드는 두 번째 요소
         let interval;
         let isPlaying = true;
         const totalSlides = document.querySelectorAll(".carousel-item").length;
+        const slideWidth = 400; // 슬라이드 가로 길이 (컨테이너와 동일)
+
+        carousel.style.transform = `translateX(-${index * slideWidth}px)`;
 
         function updateCarousel() {
-            carousel.style.transform = `translateX(-${index * 100}%)`;
+            carousel.style.transition = "transform 0.5s ease-in-out";
+            carousel.style.transform = `translateX(-${index * slideWidth}px)`;
         }
 
         function nextSlide() {
-            index = (index + 1) % totalSlides; // 무한 루프
+            index++;
             updateCarousel();
+
+            // 마지막 슬라이드에서 첫 번째로 자연스럽게 이동
+            setTimeout(() => {
+                if (index === totalSlides - 1) {
+                    carousel.style.transition = "none";
+                    index = 1;
+                    carousel.style.transform = `translateX(-${index * slideWidth}px)`;
+                }
+            }, 500);
         }
 
         function prevSlide() {
-            index = (index - 1 + totalSlides) % totalSlides; // 무한 루프
+            index--;
             updateCarousel();
+
+            // 첫 번째 슬라이드에서 마지막으로 자연스럽게 이동
+            setTimeout(() => {
+                if (index === 0) {
+                    carousel.style.transition = "none";
+                    index = totalSlides - 2;
+                    carousel.style.transform = `translateX(-${index * slideWidth}px)`;
+                }
+            }, 500);
         }
 
         function startAutoPlay() {
