@@ -9,8 +9,10 @@
     <style>
         body{
             font-family: 'Jost', 'NanumSquareNeo';
-            margin: 10px;
             font-size: .80rem;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -32,21 +34,19 @@
     <style>
         .benefit-wrap{
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            margin: 0 auto;
-            min-width: calc(100% + 20px);
+            overflow: hidden;
+            flex-wrap: wrap;
             margin: -10px;
             max-width: 1260px;
             height: 300px;
-            overflow: hidden;
         }
         .benefit-image-wrap{
             display: flex;
             flex-direction: column;
         }
         .benefit-image{
-            width: 1260px;
+            min-width: 1260px;
             margin: -170px 0 0 0;
         }
         .benefit-badge{
